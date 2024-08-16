@@ -8,23 +8,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <h2>Formulário de Login</h2>
-            <input type="email" placeholder="Insira o email" required />
-            <input type="Senha" placeholder="Senha" />
-            <P> Esqueceu sua senha?</P>
-            <button>Login </button>
-        </form>
-        <P class=" not-member">
-          Não é um membro?
-          <a href=""> se increva agora</a>
-         </P> 
-    </div>
+     
+<div class="container">
+   <section class="header">
+     <h2>Welcome</h2>
+   </section>
+
+   <form id="form" class="form">
+     <div class="form-content">
+        <label for="username"> Nome do usuario</label>
+          <input
+          id="username"
+          placeholder="Digite o nome do usuario"
+          type="text"
+          />
+          <a href=""></a>
+     </div>
+
+     <div class="form-content">
+      <label for="email">  Email</label>
+        <input
+        id="email"
+        placeholder="Digite seu email"
+        type="text"
+        />
+        <a href=""></a>
+   </div>
+
+   <div class="form-content">
+    <label for="password"> Senha</label>
+      <input
+      id="password"
+      placeholder="Digite sua senha"
+      type="password"
+      />
+      <a href=""></a>
+ </div>
+
+ <div class="form-content">
+  <label for="password-confirm"> Confirmação de senha</label>
+    <input
+    id="password-confirm"
+    placeholder="confirme sua senha"
+    type="password"
+    />
+    <a href=""></a>
+</div>
+
+
+     <button type="submit" class="btn">Cadastrar</button>
+   </form>
+
+</div>
 
 
 
         
-    
+    <script src="index.js"></script>
 </body>
 </html>

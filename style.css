@@ -1,74 +1,102 @@
-*{
+* {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
+    padding: 0;
+    font-family:    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
-    width: 100%;
-    height: 100vh;
-    background-color: #1e35a5;
-    background-image: linear-gradient(
-    #1e35a5 0%,
-    #984ae0 45%,
-    #d1982e 100%);
-    display: grid;
-    place-items: center;
-    
-    
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=01b9ed&c2=011e2c&gt=r&gd=dcc
+*/
+background: #01B9ED;
+background: radial-gradient(at center, #01B9ED, #011E2C);
 
-   
-};
-   
-h2{
-    padding:0 0 25px 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-container{
-    background-color: rgb(100, 92, 92);
-    width: 66em;
+.header{
+    background: #01B9ED;
+    padding: 24px;
+    color: #ffffff;
     text-align: center;
-    padding: 25px 25px;
-    border-radius: 10px;
-   
-}
-.container:hover{
-    width: 330px;
-    transition: 0.3s;
-    box-shadow: 5px 5px 90px rgba(31, 22, 61, 0.938);
-    margin: 7px;
-  
-}
-  
-.input{
-    width: 100%;
-    padding: 16px;
-    margin: 8px;
-    outline: none;
 }
 
- input ::placeholder {
-font-size: 15px;
- }
-button{
-    margin: 3px;
-width: 100%;
-padding: 8px;
-background-color: #3083c7;
-color: white;
-outline: none;
-border: none;
-border-radius: 50px;
-font-size: 14px;
+.container{
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
 }
-button:hover{
-    background-color: #0d5086;
+
+.form{
+   padding: 18px;
 }
-p{
-    text-align: start;
-    padding: 0px;
-    color: rgb(26, 21, 21);
-    margin: 3px 0
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
 }
+
+.form-content label{
+    display: inline-block;
+    margin-bottom:4px ;
+}
+
+.form-content  input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+
+}
+
+.form-content a {
+    position: absolute;
+    bottom: -8;
+    left: 0;
+    visibility: hidden;
+    text-decoration: none;
+}
+.form button {
+    background: #01B9ED;
+    color: #fff;
+    border-radius: 14px;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(1,185,237);
+    background: linear-gradient(90deg, rgba(1,185,237,1) 0%, rgba(19,146,182,1) 50%, rgba(6,61,122,0.7456232492997199) 100%);
+    
+}
+
+
+
+.form-content.error  input{
+  border-color: #ff3b25;
+}
+
+.form-content.error a{
+color:#ff3b25; 
+visibility: visible;
+}
+
+
+
+
+
